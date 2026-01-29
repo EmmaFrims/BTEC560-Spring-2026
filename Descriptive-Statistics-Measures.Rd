@@ -3,10 +3,23 @@
 
 # How to applyu mean function in R
 
-
-
 variable1<-c(1,2,3,4,5,6,7,8,9,10)
 
 variable3<-c(1:1000)
 
 mean(variable1)
+#[1] 5.5
+
+
+#Author: Emmanuel Frimpong; Date: 01/29/2026; Purpose: Test measures of descriptive variables
+
+# How to apply median function in R
+
+median(variable1)
+#[1] 5.5
+
+# How to apply standard deviation in R
+
+sd(variable1)
+#[1] 3.02765
+
