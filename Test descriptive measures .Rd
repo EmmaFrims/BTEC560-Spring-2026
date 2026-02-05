@@ -1,0 +1,66 @@
+# Author: Emmanuel Frimpong Date: 02/05/2026, Purpose: Test descriptive measures
+
+#Create variable called "variablenew" holding 100 values from 100 to 200.
+#Calculate the mean on variablenew for points 150 to 200
+#Calculate the median on variablenew 
+#Calculate the mean on variablenew for points 100 to 150
+
+
+#Save the outputs after eacch function in this file, upload this file on your github repository to get full points.
+
+#Create variable called "variablenew" holding 100 values from 100 to 200.
+
+variablenew <-c(100:200)
+
+> variablenew
+  [1] 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122
+ [24] 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145
+ [47] 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168
+ [70] 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191
+ [93] 192 193 194 195 196 197 198 199 200
+ 
+va <- variablenew
+> va
+  [1] 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122
+ [24] 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145
+ [47] 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168
+ [70] 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191
+ [93] 192 193 194 195 196 197 198 199 200
+
+
+#Calculate the mean on variablenew for points 150 to 200
+
+> sub_va <- va[va >=150 & va <=200]
+> sub_va
+ [1] 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172
+[24] 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195
+[47] 196 197 198 199 200
+
+> mean(sub_va)
+[1] 175
+> 
+
+
+
+#Calculate the median on variablenew 
+
+> median(va)
+[1] 150
+
+
+
+#Calculate the mean on variablenew for points 100 to 150
+
+> subset_va <- va[va >=100 & va<=150]
+
+> subset_va
+ [1] 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122
+[24] 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145
+[47] 146 147 148 149 150
+
+> mean(subset_va)
+[1] 125
+
+
+
+
